@@ -1,0 +1,21 @@
+.card-container {
+  padding: 15px;
+  border-radius: 3px;
+  background-color: #f1e6e6;
+}
+
+.card-button {
+  background: transparent;
+  padding: 8px;
+  border-radius: 3px;
+  border-color: blue;
+  margin: 5px;
+  width: 150px;
+}
+
+.noInfo {
+  padding: 15px;
+  border-radius: 3px;
+  background-color: #f1e6e6;
+}
+/*# sourceMappingURL=Card.css.map */

@@ -1,0 +1,15 @@
+.options-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	.option-button {
+		margin: 5px;
+		border-radius: 25px;
+		padding: 8px;
+		border-color: blue;
+		background: transparent;
+		text-align: center;
+	}
+}
