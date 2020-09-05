@@ -1,14 +1,11 @@
 import React from 'react';
-import MainOptions from '../../../MainOptions/MainOptions';
 import './styles/DavidSGithub.css';
 
 function DavidSPortfolio(props) {
 	return (
 		<>
 			<div className='githubContainer'>
-				<div className='heading'>
-					David Sheinbein Info
-				</div>
+				<div className='heading'>David Sheinbein Info</div>
 				<br />
 				<div className='description'>
 					<div className='descriptionTitle'>Github:</div>
