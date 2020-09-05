@@ -65,6 +65,9 @@ function DavidSPortfolio(props) {
 				<div>
 					Type <span> robot </span> for humor
 				</div>
+				<div>
+					Type <span> joke </span> for joke
+				</div>
 			</div>
 		</>
 	);

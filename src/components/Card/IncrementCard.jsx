@@ -15,7 +15,7 @@ const Quiz = (props) => {
 
 	if (!currentInformation) {
 		return (
-			<>
+			<div className='optionsAdviceContainer'>
 				<p className='noInfo'>Out of Information</p>
 				<div className='optionsAdvice'>
 					<div>
@@ -27,8 +27,11 @@ const Quiz = (props) => {
 					<div>
 						Type <span> robot </span> for humor
 					</div>
+					<div>
+						Type <span> joke </span> for joke
+					</div>
 				</div>
-			</>
+			</div>
 		);
 	}
 

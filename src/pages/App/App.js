@@ -51,6 +51,14 @@ export class App extends Component {
 						/>
 					</div>
 				</div>
+				<footer className='App-footer'>
+					<a
+						href='https://github.com/davesheinbein/Chat-Bot'
+						alt='Github'
+						className='footerLink'>
+						Github
+					</a>{' '}
+				</footer>
 			</div>
 		);
 	}

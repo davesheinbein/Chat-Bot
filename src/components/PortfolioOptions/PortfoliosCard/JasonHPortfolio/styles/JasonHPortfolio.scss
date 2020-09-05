@@ -1,8 +1,7 @@
+@import '../../../../../mixins/mixins.scss';
+
 .portfolioContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	@include flexCenter(column, center, center);
 	flex-wrap: wrap;
 	padding: 15px;
 	border-radius: 3px;
@@ -10,18 +9,12 @@
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 		'Trebuchet MS', sans-serif;
 	.portfolioHeading {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
+		@include flexCenter(row, center, center);
 		margin: 0 0.25em 0.25em;
 		font-size: 20px;
 	}
 	.portfolioDescription {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: center;
+		@include flexCenter(column, center, flex-start);
 		flex-wrap: wrap;
 		text-align: start;
 		margin: 0 1em 0.25em;
@@ -32,19 +25,13 @@
 			margin: 1em 0;
 		}
 		.portfolioLink {
-			display: flex;
-			flex-direction: row;
-			align-items: flex-start;
-			justify-content: center;
+			@include flexCenter(row, center, flex-start);
 			flex-wrap: wrap;
 			text-align: start;
 			margin: 0 0.25em 0.25em;
 			width: 100%;
 			.btnPortfolio {
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				justify-content: center;
+				@include flexCenter(row, center, center);
 				width: 100%;
 				margin: 5px;
 				border-radius: 25px;
@@ -52,12 +39,7 @@
 				background: transparent;
 				border-color: rgba(47, 0, 255, 1);
 				text-align: center;
-				-webkit-touch-callout: none; /* iOS Safari */
-				-webkit-user-select: none; /* Safari */
-				-khtml-user-select: none; /* Konqueror HTML */
-				-moz-user-select: none; /* Old versions of Firefox */
-				-ms-user-select: none; /* Internet Explorer/Edge */
-				user-select: none;
+				@include noSelection;
 				&:hover {
 					background: rgba(47, 0, 255, 0.75);
 					border-color: rgba(0, 0, 0, 0.5);
@@ -75,20 +57,14 @@
 }
 
 .optionsAdvice {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+	@include flexCenter(row, center, center);
 	flex-wrap: wrap;
 	margin: 0.5em 0;
 	border-radius: 3px;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 		'Trebuchet MS', sans-serif;
 	div {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
+		@include flexCenter(row, center, center);
 		flex-wrap: wrap;
 		background-color: #f1e6e6;
 		padding: 15px;
@@ -98,5 +74,23 @@
 			text-decoration: underline;
 			margin: 0px 5px;
 		}
+	}
+
+	@include media('<=phone') {
+	}
+
+	@include media('>phone', '<=425px') {
+	}
+
+	@include media('>425px', '<=tablet') {
+	}
+
+	@include media('>tablet', '<desktop') {
+	}
+
+	@include media('>=desktop') {
+	}
+
+	@include media('>=LGdesktop', 'retina2x') {
 	}
 }

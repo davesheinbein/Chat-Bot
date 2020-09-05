@@ -1,60 +1,98 @@
-.card-container {
-	padding: 15px;
-	border-radius: 3px;
-	background-color: #f1e6e6;
-}
+@import '../../../mixins/mixins.scss';
 
-.card-button {
-	background: transparent;
-	padding: 8px;
-	border-radius: 3px;
-	border-color: blue;
-	margin: 5px;
-	width: 150px;
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none;
-	&:hover {
-		background-color: rgba(47, 0, 255, 0.75);
-		border-color: rgba(0, 0, 0, 0.5);
-	}
-	&:focus {
-		outline: none;
-	}
-}
-
-.noInfo {
-	padding: 15px;
-	border-radius: 3px;
-	background-color: #f1e6e6;
-}
-
-.optionsAdvice {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin: 0.5em 0;
-	border-radius: 3px;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
-		'Trebuchet MS', sans-serif;
-	div {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-		background-color: #f1e6e6;
+.card {
+	@include flexCenter(column, center, center);
+	@include heightWidth(auto, auto);
+	.card-container {
+		@include flexCenter(column, center, center);
+		@include heightWidth(auto, 80%);
 		padding: 15px;
-		margin: 0.25em 0;
-		width: 100%;
-		span {
-			text-decoration: underline;
-			margin: 0px 5px;
+		border-radius: 3px;
+		background-color: #f1e6e6;
+		margin-bottom: 1em;
+	}
+
+	.card-button {
+		background: transparent;
+		padding: 8px;
+		border-radius: 3px;
+		border-color: blue;
+		margin: 1em 0px;
+		width: 150px;
+		@include heightWidth(auto, 150px);
+		@include noSelection;
+		&:hover {
+			background-color: rgba(47, 0, 255, 0.75);
+			border-color: rgba(0, 0, 0, 0.5);
 		}
+		&:focus {
+			outline: none;
+		}
+	}
+	@include media('<=phone') {
+	}
+
+	@include media('>phone', '<=425px') {
+	}
+
+	@include media('>425px', '<=tablet') {
+	}
+
+	@include media('>tablet', '<desktop') {
+	}
+
+	@include media('>=desktop') {
+	}
+
+	@include media('>=LGdesktop', 'retina2x') {
+	}
+}
+
+.optionsAdviceContainer {
+	@include flexCenter(column, center, center);
+	.noInfo {
+		padding: 15px;
+		border-radius: 3px;
+		background-color: #f1e6e6;
+		margin-bottom: 1em;
+	}
+
+	.optionsAdvice {
+		@include flexCenter(row, center, center);
+		flex-wrap: wrap;
+		margin: 0.5em 0;
+		border-radius: 3px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+			'Trebuchet MS', sans-serif;
+		div {
+			@include flexCenter(row, center, center);
+			flex-wrap: wrap;
+			background-color: #f1e6e6;
+			padding: 15px;
+			margin: 0.25em 0;
+			width: 100%;
+			span {
+				text-decoration: underline;
+				margin: 0px 5px;
+			}
+		}
+	}
+
+	@include media('<=phone') {
+	}
+
+	@include media('>phone', '<=425px') {
+	}
+
+	@include media('>425px', '<=tablet') {
+	}
+
+	@include media('>tablet', '<desktop') {
+	}
+
+	@include media('>=desktop') {
+	}
+
+	@include media('>=LGdesktop', 'retina2x') {
 	}
 }

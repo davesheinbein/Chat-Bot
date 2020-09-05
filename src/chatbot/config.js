@@ -16,7 +16,7 @@ import BotAvatar from '../components/Avatars/BotAvatar/BotAvatar';
 import UserAvatar from '../components/Avatars/UserAvatar/UserAvatar';
 
 const config = {
-	botName: `Robert Tot`,
+	botName: `Robbie Tot`,
 	lang: 'no',
 	customComponents: {
 		// Replaces the default bot avatar

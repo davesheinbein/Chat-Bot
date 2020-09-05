@@ -11,7 +11,7 @@ const FlashCard = ({
 	useEffect(() => setShowresult(false), [information]);
 
 	return (
-		<>
+		<div className='card'>
 			<div className='card-container'>
 				{!showResult && information}
 				{showResult && result}
@@ -30,7 +30,7 @@ const FlashCard = ({
 					</button>
 				</>
 			)}
-		</>
+		</div>
 	);
 };
 export default FlashCard;
