@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 var favicon = require('serve-favicon');
+const port = process.env.PORT || 3001;
 /*--- Spot for database ---*/
 /*--- Spot for recordRouter ---*/
 
