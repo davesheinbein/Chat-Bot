@@ -1,16 +1,18 @@
 **_# Chat Bot _**
 
+[ChatBot Webstite](https://dssimplechatbot.herokuapp.com/)
+
 ## Technologies Used
 
 #### 1. HTML5
 
 #### 2. CSS
 
-#### 3. JavaScript
+#### 3. SASS
 
-#### 4. React
+#### 4. JavaScript
 
-#### 5. React-spring
+#### 5. React
 
 #### 6. Node.js
 
@@ -18,6 +20,6 @@
 
 #### 8. Git
 
-### Click the link to view David Sheinbeins Portfolio website
+### Click the link to view Chat Bot
 
-[ChatBot Webstite]()
+[ChatBot Webstite](https://dssimplechatbot.herokuapp.com/)
