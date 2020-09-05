@@ -57,6 +57,13 @@
   z-index: 1002;
 }
 
+.App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffaf7b), to(#94e9db));
+  background: linear-gradient(0deg, #ffaf7b 0%, #94e9db 100%);
+  width: 100%;
+  height: 100%;
+}
+
 .App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header {
   display: -webkit-box;
   display: -ms-flexbox;

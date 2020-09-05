@@ -17,7 +17,7 @@ import UserAvatar from '../components/Avatars/UserAvatar/UserAvatar';
 
 const config = {
 	botName: `Robert Tot`,
-	lang: "no",
+	lang: 'no',
 	customComponents: {
 		// Replaces the default bot avatar
 		botAvatar: (props) => <BotAvatar {...props} />,
@@ -52,13 +52,13 @@ const config = {
 			props: {
 				informations: [
 					{
-						information: 'Some Info',
-						result: 'This is some information',
+						information: `Hey buddy`,
+						result: 'How are you?',
 						id: 1,
 					},
 					{
-						information: 'Hello',
-						result: 'World',
+						information: `I'm good thanks for asking`,
+						result: 'Enough chit chat',
 						id: 2,
 					},
 				],

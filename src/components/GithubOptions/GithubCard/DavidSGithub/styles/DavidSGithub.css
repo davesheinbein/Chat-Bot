@@ -117,6 +117,16 @@
   background: transparent;
   border-color: #2f00ff;
   text-align: center;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 .githubContainer .description .linkContainer .btnPortfolio:hover {
