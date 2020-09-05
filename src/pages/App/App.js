@@ -5,10 +5,13 @@ import config from '../../chatbot/config';
 import ActionProvider from '../../chatbot/ActionProvider';
 import MessageParser from '../../chatbot/MessageParser';
 
+import chatImg from '../../images/chat.png';
+
 import './/styles/App.css';
 
 console.log(
-	'Robot, Dog icon made by https://www.flaticon.com/authors/eucalyp - https://www.flaticon.com/'
+	'Robot, Dog icon made by https://www.flaticon.com/authors/eucalyp - https://www.flaticon.com/',
+	`Chat icon made by https://www.flaticon.com/authors/kiranshastry - https://www.flaticon.com/`
 );
 export class App extends Component {
 	state = {
@@ -26,7 +29,11 @@ export class App extends Component {
 				<button
 					className='openbtn'
 					onClick={this.handleMenuClick}>
-						X
+					<img
+						src={chatImg}
+						alt='chatImg'
+						className='chatImg'
+					/>
 				</button>
 				<div
 					className='sidebar'

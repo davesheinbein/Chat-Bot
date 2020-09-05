@@ -43,6 +43,6 @@
 }
 
 .portfolio-options-container .portfolio-option-button:focus {
-  outline: 0px none;
+  outline: none;
 }
 /*# sourceMappingURL=PortfolioOptions.css.map */

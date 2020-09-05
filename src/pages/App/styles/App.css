@@ -87,12 +87,17 @@
 
 .App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header::before {
   content: '☆';
-  margin: 0px 5px;
+  margin: 0px 0.5em;
 }
 
 .App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header::after {
   content: '☆';
-  margin: 0px 5px;
+  margin: 0px 0.5em;
+}
+
+.App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-input-container .react-chatbot-kit-chat-input-form .react-chatbot-kit-chat-input {
+  outline: none;
+  background-color: #ffffff;
 }
 
 .App .openbtn {
@@ -122,11 +127,28 @@
 }
 
 .App .openbtn:focus {
-  outline: 0px none;
+  outline: none;
   z-index: 1002;
 }
 
 .App .openbtn:hover {
   z-index: 1002;
+}
+
+.App .openbtn .chatImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
 }
 /*# sourceMappingURL=App.css.map */

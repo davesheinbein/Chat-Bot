@@ -43,6 +43,6 @@
 }
 
 .github-options-container .github-option-button:focus {
-  outline: 0px none;
+  outline: none;
 }
 /*# sourceMappingURL=GithubOptions.css.map */

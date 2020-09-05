@@ -29,7 +29,7 @@
 }
 
 .card-button:focus {
-  outline: 0px none;
+  outline: none;
 }
 
 .noInfo {

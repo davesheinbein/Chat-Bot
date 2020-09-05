@@ -135,7 +135,7 @@
 }
 
 .githubContainer .description .linkContainer .btnPortfolio:focus {
-  outline: 0px none;
+  outline: none;
 }
 
 .githubContainer .description .linkContainer .btnPortfolio a {
