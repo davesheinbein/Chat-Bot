@@ -1,4 +1,4 @@
-.options-container {
+.github-options-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,12 +16,23 @@
       flex-wrap: wrap;
 }
 
-.options-container .option-button {
+.github-options-container .github-option-button {
   margin: 5px;
   border-radius: 25px;
   padding: 8px;
-  border-color: blue;
+  border-color: #2f00ff;
   background: transparent;
   text-align: center;
+  font-size: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-/*# sourceMappingURL=Options.css.map */
+
+.github-options-container .github-option-button:hover {
+  background-color: rgba(47, 0, 255, 0.75);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.github-options-container .github-option-button:focus {
+  outline: 0px none;
+}
+/*# sourceMappingURL=GithubOptions.css.map */

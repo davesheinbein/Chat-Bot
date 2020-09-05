@@ -22,11 +22,13 @@ const FlashCard = ({
 				</button>
 			</div>
 			{showResult && (
-				<button
-					onClick={incrementIndex}
-					className='card-button'>
-					More information
-				</button>
+				<>
+					<button
+						onClick={incrementIndex}
+						className='card-button'>
+						More information
+					</button>
+				</>
 			)}
 		</>
 	);

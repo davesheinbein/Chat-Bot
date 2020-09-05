@@ -14,7 +14,22 @@ const Quiz = (props) => {
 		props.informations[informationIndex];
 
 	if (!currentInformation) {
-		return <p className='noInfo'>Out of Information</p>;
+		return (
+			<>
+				<p className='noInfo'>Out of Information</p>
+				<div className='optionsAdvice'>
+					<div>
+						Type <span> hi </span> for greeting
+					</div>
+					<div>
+						Type <span> options </span> for main menu
+					</div>
+					<div>
+						Type <span> robot </span> for humor
+					</div>
+				</div>
+			</>
+		);
 	}
 
 	return (

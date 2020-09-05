@@ -13,12 +13,21 @@ class MessageParser {
 			uppercase.includes('hello') ||
 			uppercase.includes('hi') ||
 			uppercase.includes('hey') ||
-			uppercase.includes('yo') ||
 			lowercase.includes('hello') ||
 			lowercase.includes('hi') ||
 			lowercase.includes('hey')
 		) {
 			this.actionProvider.greet();
+		}
+
+		// Options
+		if (
+			uppercase.includes('option') ||
+			lowercase.includes('option') ||
+			uppercase.includes('options') ||
+			lowercase.includes('options')
+		) {
+			this.actionProvider.mainOptions();
 		}
 
 		// Robot
@@ -29,6 +38,48 @@ class MessageParser {
 			lowercase.includes('robot')
 		) {
 			this.actionProvider.robot();
+		}
+
+		// How Are You
+		if (
+			uppercase.includes(`what's up`) ||
+			lowercase.includes(`what's up`) ||
+			uppercase.includes(`what's up`) ||
+			lowercase.includes(`what's up`) ||
+			uppercase.includes('how are you') ||
+			lowercase.includes('how are you') ||
+			uppercase.includes(`how's it going are you`) ||
+			lowercase.includes(`how's it going are you`)
+		) {
+			this.actionProvider.howAreYou();
+		}
+
+		// Joke
+		if (
+			uppercase.includes(`joke`) ||
+			lowercase.includes(`joke`) ||
+			uppercase.includes(`funny`) ||
+			lowercase.includes(`funny`)
+		) {
+			this.actionProvider.funny();
+		}
+
+		// Hahahahaha
+		if (
+			uppercase.includes(`haha`) ||
+			lowercase.includes(`haha`) ||
+			uppercase.includes(`lol`) ||
+			lowercase.includes(`lol`)
+		) {
+			this.actionProvider.haha();
+		}
+
+		// friends
+		if (
+			uppercase.includes(`friend`) ||
+			lowercase.includes(`friend`)
+		) {
+			this.actionProvider.friends();
 		}
 
 		// Information
@@ -48,17 +99,21 @@ class MessageParser {
 			lowercase.includes('github') ||
 			lowercase.includes('git')
 		) {
-			this.actionProvider.handleinfoBox();
+			this.actionProvider.githubOptions();
 		}
 
 		// Portfolio
 		if (
+			uppercase.includes('port') ||
+			lowercase.includes('port') ||
+			uppercase.includes('portfolio') ||
+			lowercase.includes('portfolio') ||
 			uppercase.includes('Portfolios') ||
 			lowercase.includes('Portfolios') ||
 			uppercase.includes('Portfolio') ||
 			lowercase.includes('Portfolio')
 		) {
-			this.actionProvider.handleinfoBox();
+			this.actionProvider.portfolioOptions();
 		}
 	}
 }

@@ -1,6 +1,9 @@
+@charset "UTF-8";
 .App {
+  position: relative;
   text-align: center;
   min-height: 100vh;
+  background-color: #282c34db;
 }
 
 .App .App-header {
@@ -22,12 +25,15 @@
   text-align: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
 }
 
 .App .chatbotContainer {
-  background-color: #282c34db;
-  width: 100%;
-  height: 100vh;
+  width: contain;
+  height: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,5 +47,79 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  z-index: 1001;
+}
+
+.App .chatbotContainer:hover {
+  z-index: 1002;
+}
+
+.App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header::before {
+  content: '☆';
+  margin: 0px 5px;
+}
+
+.App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header::after {
+  content: '☆';
+  margin: 0px 5px;
+}
+
+.App .openbtn {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100px - 2vw);
+  height: calc(100px - 2vw);
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 2px #282c34;
+          box-shadow: 0 2px 2px #282c34;
+  background-color: lightgray;
+}
+
+.App .openbtn:focus {
+  outline: 0px none;
+  z-index: 1002;
+}
+
+.App .openbtn:hover {
+  z-index: 1002;
 }
 /*# sourceMappingURL=App.css.map */
