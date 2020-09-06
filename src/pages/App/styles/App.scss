@@ -318,6 +318,28 @@
 		}
 	}
 
+	@include media('>=700px', '<=tablet') {
+		.App-header {
+		}
+		.chatbotContainer {
+			&:hover {
+			}
+			.react-chatbot-kit-chat-container {
+				.react-chatbot-kit-chat-inner-container {
+					.react-chatbot-kit-chat-header {
+						&::before {
+							background-size: 30px 30px;
+							margin-left: 1em;
+						}
+						&::after {
+							content: 'Hello how can I help you friend!';
+						}
+					}
+				}
+			}
+		}
+	}
+
 	@include media('>425px', '<=tablet') {
 		.App-header {
 		}
@@ -492,7 +514,7 @@
 		}
 	}
 
-	@include media('>=1298px') {
+	@include media('>=1298px', '<desktop') {
 		.App-header {
 		}
 		.chatbotContainer {

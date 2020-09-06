@@ -426,6 +426,16 @@
   }
 }
 
+@media (min-width: 700px) and (max-width: 768px) {
+  .App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header::before {
+    background-size: 30px 30px;
+    margin-left: 1em;
+  }
+  .App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header::after {
+    content: 'Hello how can I help you friend!';
+  }
+}
+
 @media (min-width: 426px) and (max-width: 768px) {
   .App .chatbotContainer {
     height: 50vh;
@@ -616,7 +626,7 @@
   }
 }
 
-@media (min-width: 1298px) {
+@media (min-width: 1298px) and (max-width: 1365px) {
   .App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header::before {
     background-size: 30px 30px;
     margin-left: 1em;
