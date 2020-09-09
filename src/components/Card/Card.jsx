@@ -26,7 +26,7 @@ const FlashCard = ({
 					<button
 						onClick={incrementIndex}
 						className='card-button'>
-						More information
+						Next
 					</button>
 				</>
 			)}

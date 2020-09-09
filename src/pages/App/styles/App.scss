@@ -259,6 +259,7 @@
 					.react-chatbot-kit-chat-header {
 						@include heightWidth(contain, 100%);
 						padding: 1em 0px;
+
 						&::before {
 						}
 						&::after {
@@ -557,8 +558,7 @@
 						@include heightWidth(contain, 100%);
 						padding: 0.5em 0px;
 						&::before {
-							background-size: 30px 30px;
-							margin-left: 3em;
+							background-size: 40px 40px;
 						}
 						&::after {
 							content: 'Hello how can I help you friend!';
@@ -652,7 +652,8 @@
 						}
 					}
 					.react-chatbot-kit-chat-message-container {
-						@include heightWidth(100%, 100%);
+						@include heightWidth(100%, 95.5%);
+						margin-left: 2px;
 						.react-chatbot-kit-chat-bot-message-container {
 							.avatarIcon {
 								#robotImg {

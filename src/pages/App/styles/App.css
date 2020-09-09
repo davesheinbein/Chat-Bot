@@ -701,8 +701,7 @@
     padding: 0.5em 0px;
   }
   .App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header::before {
-    background-size: 30px 30px;
-    margin-left: 3em;
+    background-size: 40px 40px;
   }
   .App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header::after {
     content: 'Hello how can I help you friend!';
@@ -803,7 +802,8 @@
   }
   .App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-message-container {
     height: 100%;
-    width: 100%;
+    width: 95.5%;
+    margin-left: 2px;
   }
   .App .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-message-container .react-chatbot-kit-chat-bot-message-container .react-chatbot-kit-chat-bot-message {
     font-size: 10px;
