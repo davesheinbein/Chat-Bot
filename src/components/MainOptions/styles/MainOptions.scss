@@ -1,44 +1,73 @@
 @import '../../../mixins/mixins.scss';
+@import '../../../breakpoints/breakpoints.scss';
 
 .mainOptions-container {
 	@include flexCenter(row, center, center);
 	flex-wrap: wrap;
+	gap: 10px;
+	padding: 10px;
 	margin-bottom: 1em;
 	.mainOptions-button {
 		margin: 5px;
 		border-radius: 25px;
-		padding: 8px;
-		border-color: rgba(47, 0, 255, 1);
+		padding: 10px 15px;
+		border: 2px solid rgba(47, 0, 255, 1);
 		background: transparent;
 		text-align: center;
-		font-size: 12px;
+		font-size: 14px;
 		font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 			'Trebuchet MS', sans-serif;
+		cursor: pointer;
 		@include noSelection;
+		transition: background-color 0.3s, border-color 0.3s;
 		&:hover {
 			background-color: rgba(47, 0, 255, 0.75);
 			border-color: rgba(0, 0, 0, 0.5);
 		}
 		&:focus {
-			outline: 0px none;
+			outline: none;
 		}
 	}
 
 	@include media('<=phone') {
+		.mainOptions-button {
+			width: 100%;
+			font-size: 12px;
+		}
 	}
 
 	@include media('>phone', '<=425px') {
+		.mainOptions-button {
+			width: 100%;
+			font-size: 12px;
+		}
 	}
 
 	@include media('>425px', '<=tablet') {
+		.mainOptions-button {
+			width: auto;
+			font-size: 13px;
+		}
 	}
 
 	@include media('>tablet', '<desktop') {
+		.mainOptions-button {
+			width: auto;
+			font-size: 14px;
+		}
 	}
 
 	@include media('>=desktop') {
+		.mainOptions-button {
+			width: auto;
+			font-size: 14px;
+		}
 	}
 
 	@include media('>=LGdesktop', 'retina2x') {
+		.mainOptions-button {
+			width: auto;
+			font-size: 14px;
+		}
 	}
 }

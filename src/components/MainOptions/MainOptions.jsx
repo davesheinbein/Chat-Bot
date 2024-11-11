@@ -1,38 +1,41 @@
 import React from 'react';
-
 import './styles/MainOptions.css';
 
-const MainOptions = (props) => {
+const MainOptions = ({ actionProvider }) => {
 	const mainOptions = [
 		{
-			text: 'Information',
-			handler: props.actionProvider.handleinfoBox,
+			text: 'Greeting',
+			handler: actionProvider.handleGreetingBox,
 			id: 1,
 		},
 		{
 			text: 'Github',
-			handler: props.actionProvider.githubOptions,
+			handler: actionProvider.githubOptions,
 			id: 2,
 		},
 		{
 			text: 'Portfolio',
-			handler: props.actionProvider.portfolioOptions,
+			handler: actionProvider.portfolioOptions,
 			id: 3,
+		},
+		{
+			text: 'Info',
+			handler: actionProvider.handleInfo,
+			id: 4,
 		},
 	];
 
-	const buttonsMarkup = mainOptions.map((option) => (
-		<button
-			key={option.id}
-			onClick={option.handler}
-			className='mainOptions-button'>
-			{option.text}
-		</button>
-	));
-
 	return (
 		<div className='mainOptions-container'>
-			{buttonsMarkup}
+			{mainOptions.map((option) => (
+				<button
+					key={option.id}
+					onClick={option.handler}
+					className='mainOptions-button'
+				>
+					{option.text}
+				</button>
+			))}
 		</div>
 	);
 };

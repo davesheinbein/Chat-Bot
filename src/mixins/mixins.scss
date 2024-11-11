@@ -36,3 +36,9 @@
 	justify-content: $justified;
 	align-items: $alignment;
 }
+
+@mixin media($query) {
+	@media #{$query} {
+		@content;
+	}
+}

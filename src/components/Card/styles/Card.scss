@@ -1,26 +1,34 @@
 @import '../../../mixins/mixins.scss';
+@import '../../../breakpoints/breakpoints.scss';
 
 .card {
 	@include flexCenter(column, center, center);
 	@include heightWidth(auto, auto);
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	.card-container {
 		@include flexCenter(column, center, center);
 		@include heightWidth(auto, 80%);
-		padding: 15px;
-		border-radius: 3px;
+		padding: 20px;
+		border-radius: 5px;
 		background-color: #f1e6e6;
 		margin-bottom: 1em;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	}
 
 	.card-button {
 		background: transparent;
-		padding: 8px;
-		border-radius: 3px;
-		border-color: blue;
+		padding: 10px 15px;
+		border-radius: 5px;
+		border: 2px solid blue;
 		margin: 1em 0px;
 		width: 150px;
+		cursor: pointer;
 		@include heightWidth(auto, 150px);
 		@include noSelection;
+		transition: background-color 0.3s, border-color 0.3s;
 		&:hover {
 			background-color: rgba(47, 0, 255, 0.75);
 			border-color: rgba(0, 0, 0, 0.5);
@@ -30,40 +38,68 @@
 		}
 	}
 	@include media('<=phone') {
+		.card-button {
+			width: 100%;
+			font-size: 12px;
+		}
 	}
 
 	@include media('>phone', '<=425px') {
+		.card-button {
+			width: 100%;
+			font-size: 12px;
+		}
 	}
 
 	@include media('>425px', '<=tablet') {
+		.card-button {
+			width: auto;
+			font-size: 14px;
+		}
 	}
 
 	@include media('>tablet', '<desktop') {
+		.card-button {
+			width: auto;
+			font-size: 14px;
+		}
 	}
 
 	@include media('>=desktop') {
+		.card-button {
+			width: auto;
+			font-size: 14px;
+		}
 	}
 
 	@include media('>=LGdesktop', 'retina2x') {
+		.card-button {
+			width: auto;
+			font-size: 14px;
+		}
 	}
 }
 
 .optionsAdviceContainer {
 	@include flexCenter(column, center, center);
 	.noInfo {
-		padding: 15px;
-		border-radius: 3px;
+		padding: 20px;
+		border-radius: 5px;
 		background-color: #f1e6e6;
 		margin-bottom: 1em;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	}
 
 	.optionsAdvice {
 		@include flexCenter(row, center, center);
 		flex-wrap: wrap;
 		margin: 0.5em 0;
-		border-radius: 3px;
+		border-radius: 5px;
 		font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 			'Trebuchet MS', sans-serif;
+		background-color: #ffffff;
+		padding: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		div {
 			@include flexCenter(row, center, center);
 			flex-wrap: wrap;
@@ -71,6 +107,8 @@
 			padding: 15px;
 			margin: 0.25em 0;
 			width: 100%;
+			border-radius: 5px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 			span {
 				text-decoration: underline;
 				margin: 0px 5px;
@@ -79,20 +117,38 @@
 	}
 
 	@include media('<=phone') {
+		.optionsAdvice div {
+			padding: 10px;
+		}
 	}
 
 	@include media('>phone', '<=425px') {
+		.optionsAdvice div {
+			padding: 10px;
+		}
 	}
 
 	@include media('>425px', '<=tablet') {
+		.optionsAdvice div {
+			padding: 12px;
+		}
 	}
 
 	@include media('>tablet', '<desktop') {
+		.optionsAdvice div {
+			padding: 15px;
+		}
 	}
 
 	@include media('>=desktop') {
+		.optionsAdvice div {
+			padding: 15px;
+		}
 	}
 
 	@include media('>=LGdesktop', 'retina2x') {
+		.optionsAdvice div {
+			padding: 15px;
+		}
 	}
 }

@@ -1,6 +1,6 @@
 **_# Chat Bot _**
 
-[ChatBot Webstite](https://dssimplechatbot.herokuapp.com/)
+[ChatBot Webstite](https://chatbot-1512e.web.app/)
 
 ## Technologies Used
 
@@ -22,4 +22,4 @@
 
 ### Click the link to view Chat Bot
 
-[ChatBot Webstite](https://dssimplechatbot.herokuapp.com/)
+[ChatBot Webstite](https://chatbot-1512e.web.app/)

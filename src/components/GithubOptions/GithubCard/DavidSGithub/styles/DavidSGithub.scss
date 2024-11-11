@@ -1,63 +1,75 @@
 @import '../../../../../mixins/mixins.scss';
+@import '../../../../../breakpoints/breakpoints.scss';
 
 .githubContainer {
 	@include flexCenter(column, center, center);
 	flex-wrap: wrap;
-	padding: 15px;
-	border-radius: 3px;
+	padding: 20px;
+	border-radius: 5px;
 	background-color: #f1e6e6;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 		'Trebuchet MS', sans-serif;
+	box-shadow: 0 4px 8px rgba(0, 0, 255, 0.1);
+
 	.heading {
-		text-decoration: underline;
-		text-decoration-style: double;
-		margin: 0 0.25em 0.25em;
-		font-size: 20px;
+		text-decoration: underline double;
+		margin: 0 0.25em 0.5em;
+		font-size: 24px;
+		font-weight: bold;
 	}
+
 	.description {
 		@include flexCenter(column, center, flex-start);
 		flex-wrap: wrap;
 		text-align: start;
-		margin: 0 1em 0.25em;
+		margin: 0 1em 0.5em;
 		.descriptionTitle {
 			text-decoration: underline;
-			font-size: 16px;
+			font-size: 18px;
+			font-weight: bold;
 		}
+
 		.descriptionText {
 			margin: 1em 0;
+			line-height: 1.5;
 			span {
 				@include flexCenter(column, center, flex-start);
 				text-decoration: underline;
 				margin: 1em 0;
 			}
 		}
+
 		.linkContainer {
 			@include flexCenter(row, center, flex-start);
 			flex-wrap: wrap;
 			text-align: start;
-			margin: 0 0.25em 0.25em;
+			margin: 0 0.25em 0.5em;
 			width: 100%;
 			.btnPortfolio {
 				@include flexCenter(row, center, center);
 				width: 100%;
 				margin: 5px;
 				border-radius: 25px;
-				padding: 8px;
+				padding: 10px 15px;
 				background: transparent;
-				border-color: rgba(47, 0, 255, 1);
+				border: 2px solid rgba(47, 0, 255, 1);
 				text-align: center;
+				cursor: pointer;
 				@include noSelection;
+				transition: background-color 0.3s, border-color 0.3s;
 				&:hover {
 					background: rgba(47, 0, 255, 0.75);
 					border-color: rgba(0, 0, 0, 0.5);
 				}
+
 				&:focus {
 					outline: none;
 				}
+
 				a {
 					text-decoration: none;
 					color: #000000;
-					font-size: 12px;
+					font-size: 14px;
 					font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 						'Trebuchet MS', sans-serif;
 				}
@@ -66,21 +78,111 @@
 	}
 
 	@include media('<=phone') {
+		.heading {
+			font-size: 18px;
+		}
+
+		.descriptionTitle {
+			font-size: 14px;
+		}
+
+		.descriptionText {
+			font-size: 12px;
+		}
+
+		.btnPortfolio {
+			font-size: 12px;
+		}
 	}
 
 	@include media('>phone', '<=425px') {
+		.heading {
+			font-size: 18px;
+		}
+
+		.descriptionTitle {
+			font-size: 14px;
+		}
+
+		.descriptionText {
+			font-size: 12px;
+		}
+
+		.btnPortfolio {
+			font-size: 12px;
+		}
 	}
 
 	@include media('>425px', '<=tablet') {
+		.heading {
+			font-size: 20px;
+		}
+
+		.descriptionTitle {
+			font-size: 16px;
+		}
+
+		.descriptionText {
+			font-size: 14px;
+		}
+
+		.btnPortfolio {
+			font-size: 14px;
+		}
 	}
 
 	@include media('>tablet', '<desktop') {
+		.heading {
+			font-size: 22px;
+		}
+
+		.descriptionTitle {
+			font-size: 18px;
+		}
+
+		.descriptionText {
+			font-size: 16px;
+		}
+
+		.btnPortfolio {
+			font-size: 16px;
+		}
 	}
 
 	@include media('>=desktop') {
+		.heading {
+			font-size: 24px;
+		}
+
+		.descriptionTitle {
+			font-size: 18px;
+		}
+
+		.descriptionText {
+			font-size: 16px;
+		}
+
+		.btnPortfolio {
+			font-size: 16px;
+		}
 	}
 
 	@include media('>=LGdesktop', 'retina2x') {
+		.heading {
+			font-size: 24px;
+		}
+
+		.descriptionTitle {
+			font-size: 18px;
+		}
+
+		.descriptionText {
+			font-size: 16px;
+		}
+
+		.btnPortfolio {
+			font-size: 16px;
+		}
 	}
 }
 
@@ -91,39 +193,63 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	margin: 0.5em 0;
-	border-radius: 3px;
+	border-radius: 5px;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 		'Trebuchet MS', sans-serif;
+	background-color: #f1e6e6;
+	padding: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 255, 0.1);
 	div {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
-		background-color: #f1e6e6;
+		background-color: #ffffff;
 		padding: 15px;
 		margin: 0.25em 0;
 		width: 100%;
+		border-radius: 5px;
+		box-shadow: 0 2px 4px rgba(0, 0, 255, 0.1);
 		span {
 			text-decoration: underline;
 			margin: 0px 5px;
 		}
 	}
+
 	@include media('<=phone') {
+		div {
+			padding: 10px;
+		}
 	}
 
 	@include media('>phone', '<=425px') {
+		div {
+			padding: 10px;
+		}
 	}
 
 	@include media('>425px', '<=tablet') {
+		div {
+			padding: 12px;
+		}
 	}
 
 	@include media('>tablet', '<desktop') {
+		div {
+			padding: 15px;
+		}
 	}
 
 	@include media('>=desktop') {
+		div {
+			padding: 15px;
+		}
 	}
 
 	@include media('>=LGdesktop', 'retina2x') {
+		div {
+			padding: 15px;
+		}
 	}
 }

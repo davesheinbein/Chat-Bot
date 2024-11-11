@@ -1,50 +1,74 @@
+/**
+*
+* Testing
+*
+**/
 .github-options-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
 }
-
 .github-options-container .github-option-button {
   margin: 5px;
   border-radius: 25px;
-  padding: 8px;
-  border-color: #2f00ff;
+  padding: 10px 15px;
+  border: 2px solid rgb(47, 0, 255);
   background: transparent;
   text-align: center;
-  font-size: 12px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Old versions of Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+  font-size: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */ /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+              supported by Chrome, Edge, Opera and Firefox */
+  transition: background-color 0.3s, border-color 0.3s;
 }
-
 .github-options-container .github-option-button:hover {
   background-color: rgba(47, 0, 255, 0.75);
-  border-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 0, 0, 0.5);
 }
-
 .github-options-container .github-option-button:focus {
   outline: none;
 }
-/*# sourceMappingURL=GithubOptions.css.map */
+@media (max-width: 360px) {
+  .github-options-container .github-option-button {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .github-options-container .github-option-button {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .github-options-container .github-option-button {
+    width: auto;
+    font-size: 13px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1365px) {
+  .github-options-container .github-option-button {
+    width: auto;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1366px) {
+  .github-options-container .github-option-button {
+    width: auto;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .github-options-container .github-option-button {
+    width: auto;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=GithubOptions.css.map */

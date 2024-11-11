@@ -33,7 +33,7 @@ function DavidSPortfolio() {
 					</div>
 					<div className='portfolioLink'>
 						<button className='btnPortfolio'>
-							<a href='https://github.com/davesheinbein/david-s-portfolio'>
+							<a href='https://davidsheinbeinengineer.com/'>
 								Portfolio Link
 							</a>
 						</button>

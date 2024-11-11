@@ -1,36 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import './styles/Card.css';
 
-const FlashCard = ({
-	information,
-	result,
-	incrementIndex,
-}) => {
-	const [showResult, setShowresult] = useState(false);
+const Card = ({ information, result, incrementIndex }) => {
+	const [showResult, setShowResult] = useState(false);
 
-	useEffect(() => setShowresult(false), [information]);
+	useEffect(() => setShowResult(false), [information]);
 
 	return (
 		<div className='card'>
 			<div className='card-container'>
-				{!showResult && information}
-				{showResult && result}
+				{!showResult ? information : result}
 				<button
-					onClick={() => setShowresult(!showResult)}
+					onClick={() => setShowResult(!showResult)}
 					className='card-button'>
 					Swap
 				</button>
 			</div>
 			{showResult && (
-				<>
-					<button
-						onClick={incrementIndex}
-						className='card-button'>
-						Next
-					</button>
-				</>
+				<button
+					onClick={incrementIndex}
+					className='card-button'>
+					Next
+				</button>
 			)}
 		</div>
 	);
 };
-export default FlashCard;
+
+export default Card;

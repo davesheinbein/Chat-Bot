@@ -1,127 +1,164 @@
+/**
+*
+* Testing
+*
+**/
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: auto;
   width: auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .card .card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: auto;
   width: 80%;
-  padding: 15px;
-  border-radius: 3px;
+  padding: 20px;
+  border-radius: 5px;
   background-color: #f1e6e6;
   margin-bottom: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .card .card-button {
   background: transparent;
-  padding: 8px;
-  border-radius: 3px;
-  border-color: blue;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid blue;
   margin: 1em 0px;
   width: 150px;
+  cursor: pointer;
   height: auto;
   width: 150px;
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Old versions of Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */ /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+              supported by Chrome, Edge, Opera and Firefox */
+  transition: background-color 0.3s, border-color 0.3s;
 }
-
 .card .card-button:hover {
   background-color: rgba(47, 0, 255, 0.75);
   border-color: rgba(0, 0, 0, 0.5);
 }
-
 .card .card-button:focus {
   outline: none;
 }
+@media (max-width: 360px) {
+  .card .card-button {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .card .card-button {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .card .card-button {
+    width: auto;
+    font-size: 14px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1365px) {
+  .card .card-button {
+    width: auto;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1366px) {
+  .card .card-button {
+    width: auto;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .card .card-button {
+    width: auto;
+    font-size: 14px;
+  }
+}
 
-.noInfo {
-  padding: 15px;
-  border-radius: 3px;
+.optionsAdviceContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.optionsAdviceContainer .noInfo {
+  padding: 20px;
+  border-radius: 5px;
   background-color: #f1e6e6;
   margin-bottom: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.optionsAdvice {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.optionsAdviceContainer .optionsAdvice {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 0.5em 0;
-  border-radius: 3px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.optionsAdvice div {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.optionsAdviceContainer .optionsAdvice div {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   background-color: #f1e6e6;
   padding: 15px;
   margin: 0.25em 0;
   width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.optionsAdvice div span {
+.optionsAdviceContainer .optionsAdvice div span {
   text-decoration: underline;
   margin: 0px 5px;
 }
-/*# sourceMappingURL=Card.css.map */
+@media (max-width: 360px) {
+  .optionsAdviceContainer .optionsAdvice div {
+    padding: 10px;
+  }
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .optionsAdviceContainer .optionsAdvice div {
+    padding: 10px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .optionsAdviceContainer .optionsAdvice div {
+    padding: 12px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1365px) {
+  .optionsAdviceContainer .optionsAdvice div {
+    padding: 15px;
+  }
+}
+@media (min-width: 1366px) {
+  .optionsAdviceContainer .optionsAdvice div {
+    padding: 15px;
+  }
+}
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .optionsAdviceContainer .optionsAdvice div {
+    padding: 15px;
+  }
+}/*# sourceMappingURL=Card.css.map */
