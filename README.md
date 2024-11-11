@@ -38,6 +38,5 @@ To set up the project, ensure you have Node.js and Git installed on your machine
 - JavaScript
 - React
 - Node.js
-<!-- - Heroku -->
 - Git
 - Firebase
